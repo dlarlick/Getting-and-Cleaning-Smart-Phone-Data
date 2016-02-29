@@ -16,5 +16,28 @@ For this project, the following steps were performed to generate a tidy dataset 
 9.  A summarize action is performed using the function means on all mean and std columns.
 
 The final tidy dataset has the following 
+
+  variable            | Description of use
+  ----------------------------|--------------------------------------------------------------
+  subjid                      | The unique subject identifier 
+  activity                    | The type of activity performed during data collection
+  filetype                    | The file type from which the original raw data was obtained
+  Raw Measurements(rpting)    | All raw measurements with mean() or std() 
+  
+Raw data files have been modified to remove trailing extraneous characters whilst still retaining the basic naming convention from the original source in order to ensure preservation of intended columns and traceability.
+
+Example of working data (combined) frame column naming.
+tBodyAccmeanX
+tBodyAccmeanY
+tBodyAccmeanZ 
+tBodyAccstdX
+tBodyAccstdY
+tBodyAccstdZ
+tGravityAccmeanX        
+tGravityAccmeanY         
+tGravityAccmeanZ         
+...
+  
+  
   
     

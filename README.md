@@ -17,16 +17,16 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
    
   features.txt : Dataset containing column names of the X_test and X_Train 
 
-  X_test.txt          : Raw measurements for subjects that were used in testing
-  X_train.txt         : Raw measurements for subjects that were used in training
-
-  y_test.txt          : activity numbers correlating to test raw measurements by line number
-  y_train.txt         : activity numbers correlating to train raw measurements by line number
-
-  subject_test.txt    : Subject identifiers correlating to test raw measurements by line number
-  subject_train.txt   : Subject identifiers correlating to train raw measurements by line number
-  
-  activity_labels.txt : Human readable decoded value of y_test and y_train values.
+  File Name           | Description of use
+  ------------------- | --------------------------------------------------------------------------
+  X_test.txt          | Subject identifiers correlating to train raw measurements by line number
+  X_test.txt          | Raw measurements for subjects that were used in testing
+  X_train.txt         | Raw measurements for subjects that were used in training
+  y_test.txt          | activity numbers correlating to test raw measurements by line number
+  y_train.txt         | activity numbers correlating to train raw measurements by line number
+  subject_test.txt    | Subject identifiers correlating to test raw measurements by line number
+  subject_train.txt   | Subject identifiers correlating to train raw measurements by line number
+  activity_labels.txt | Human readable decoded value of y_test and y_train values.
 
 Other available datasets within the smartphone zip are not used in the run_analysis.R script for this project.
 

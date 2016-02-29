@@ -1,0 +1,20 @@
+For this project, the following steps were performed to generate a tidy dataset for the purpose of data aggregation of means by subject identifier and related action.
+
+1.  X_train, X_test datasets are loaded
+2.  features dataset loaded for possible column name application
+    a.  Column names require update prior to be assigned to the raw data files
+    b.  Identified columns with pattern "()-##-## are renamed to dummycol## to avoid processing error on uniqueness
+    c.  Columns assigned to X_train and X_test
+3.  Activity labels (y_train, y_test) are then appended using cbind to the respective raw dataset
+4.  The subject identifier (subject_train, subject_test) are then appended using cbind to the respective raw dataset
+5.  Human readable activity labels are merged in using an inner_join to the numeric activity id previously added
+6.  The two working datasets are then appended together using rbind giving a working combined data frame
+7.  Raw datasets are restricted to only those that are needed for final analysis
+    a.  Pattern matching looking for mean()
+    b.  Pattern matching looking for std()
+8.  A grouping is created using the subjid and activity
+9.  A summarize action is performed using the function means on all mean and std columns.
+
+The final tidy dataset has the following 
+  
+    
